@@ -4,6 +4,8 @@ import Header from "~/components/header";
 import HeroSection from "~/components/herosection";
 import MainContent from "~/components/maincontent";
 import AlertaSection from "~/components/alertasection";
+import NoticiasRecentes from "~/components/noticiasrecentes";
+import Footer from "~/components/footer";
 export function meta({ }: Route.MetaArgs) {
   return [
     { title: "New React Router App" },
@@ -18,7 +20,8 @@ export default function Home() {
       <HeroSection />
       <MainContent />
       <AlertaSection />
-      <footer className="text-center text-gray-500 mt-10">Footer</footer>
+      <NoticiasRecentes />
+      <Footer />
 
     </>
   );
